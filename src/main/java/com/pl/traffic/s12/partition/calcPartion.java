@@ -17,6 +17,12 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import com.pl.comm.dfsConfig;
 import com.pl.traffic.s1.sum.trafficBean;
 
+/**
+ * 对手机号的流量合计 后 根据手机号分组
+ * 
+ * @author max400
+ *
+ */
 public class calcPartion {
 
 	public static class PartionMapper extends Mapper<LongWritable, Text, trafficBean, NullWritable> {
